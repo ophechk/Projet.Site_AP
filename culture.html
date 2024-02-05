@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Paris ville culturelle</h1>
+        <nav>
+            <ul>
+                <li><a href="aa.html">Accueil</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="Page3.html">sss </a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+            <p>Tout savoir sur l’offre culturelle parisienne : musées, bibliothèques, conservatoires, archives, ateliers des beaux arts...</p>
+        <div class="shortcuts theme-shortcuts is-vertical-small">
+            <h3>Accès rapides : </h3>
+          
+            <div class="shortcuts-items">
+                <div class="shortcut is-vertical-small">
+            <a class="shortcut-link" target="_blank" title="Ouverture dans un nouvel onglet" rel="noopener" href="https://bibliotheques.paris.fr/">
+          
+              <span class="shortcut-link-icon">
+                <img src="https://cdn.paris.fr/paris/2020/09/30/cb15accf9ced4b6a3aca8ffb34cfe9d6.svg" alt="L'image de la bibliorhèque" height="60" widch="60">
+              </span>
+          
+              <p class= "intro" >Bibliothèques municipales</p>
+          </a></div>
+          
+                <div class="shortcut is-vertical-small">
+            <a class="shortcut-link" target="_blank" title="Ouverture dans un nouvel onglet" rel="noopener" href="http://www.parismusees.paris.fr/fr">
+          
+              <span class="shortcut-link-icon">
+                <img src="https://cdn.paris.fr/paris/2020/09/30/9fa1f7f0f69a11ba4db3882b8ede1b78.svg" alt="L'image de la bibliorhèque" height="60" widch="60">
+              </span>
+          
+              <p class= "intro">Musées</p>
+          </a></div>
+          
+                <div class="shortcut is-vertical-small">
+            <a class="shortcut-link" target="_blank" title="Ouverture dans un nouvel onglet" rel="noopener" href="http://archives.paris.fr/">
+          
+              <span class="shortcut-link-icon">
+                <img src="https://cdn.paris.fr/paris/2020/09/30/c48eef43882e98314f73b56d957ca82d.svg" alt="L'image de la bibliorhèque" height="60" widch="60">
+              </span>
+          
+              <p class= "intro">MArchives de Paris</p>
+          </a></div>
+          
+                <div class="shortcut is-vertical-small">
+            <a class="shortcut-link" target="_blank" title="Ouverture dans un nouvel onglet" rel="noopener" href="https://conservatoires.paris.fr/">
+          
+              <span class="shortcut-link-icon">
+                <img src="https://cdn.paris.fr/paris/2020/09/30/78d02b654960ffd942f6ea1271ff9953.svg" alt="L'image de la bibliorhèque" height="60" widch="60">
+              </span>
+          
+              <p class= "intro">Conservatoires de Paris</p>
+          </a></div>
+          
+            </div>
+          </div>
+
+        
+          <section>
+            <article>
+                <P1>"Les meilleures bibliothèques parisiennes"</P1>
+                <h3>Bibliothèque Sainte-Geneviève</h3>
+                <img src="bi.webp" alt="Image de la Bibliothèque">
+                <p>la Bibliothèque nationale de France interpelle autant par ses tours, des livres ouverts se regardant en chiens de faïence imaginés par Dominique Perrault, que par son impressionnant fonds de documents. Un paradis de 15 millions d'archives touchant à toutes les disciplines, réparti sur 3 000 places entre le haut-de-jardin, accessible à tous, et le rez-de-jardin, royaume des chercheurs. </p>
+                <button class="mon-bouton" data-address="Quai François-Mauriac, Paris 13e">L'adresse</button>
+                <div class="mon-alerte" role="alert"></div>
+            </article>
+        
+            <article>
+                <h3>Bibliothèque nationale de France (Site Richelieu)</h3>
+                <img src="bi2.webp" alt="Image de la Bibliothèque">
+                <p>Après des années de coûteux travaux, le site Richelieu, le berceau tricentenaire de la BnF situé dans le 2e, a rouvert ses portes en 2022. Outre la refonte architecturale et le nouveau musée, c’est surtout la monumentale salle Ovale de lecture, avec ses 18 mètres de hauteur coiffés d’une verrière, qui attire les regards et les lecteurs. </p>
+                <button class="mon-bouton" data-address="58 rue de Richelieu, Paris 2e">L'adresse</button>
+                <div class="mon-alerte" role="alert"></div>
+            </article>
+        
+            <article>
+                <h3>Bibliothèque interuniversitaire de la Sorbonne (BIS)</h3>
+                <img src="bi3.webp" alt="Image de la Bibliothèque">
+                <p>Une des plus vieilles et mythiques universités du monde pour l’une des plus belles bibliothèques de la capitale. Refaite au tournant des années 2010, la bibliothèque interuniversitaire de la Sorbonne et ses 250 ans au compteur (depuis 2020) détient près de 2 millions de documents imprimés, majoritairement en lettres et sciences humaines. Bémol : l’accès est coordonné au niveau d’études (L3 minimum), à la discipline suivie et à l’université de rattachement.</p>
+                <button class="mon-bouton" data-address="17, rue de la Sorbonne, Paris 5e">L'adresse</button>
+                <div class="mon-alerte" role="alert"></div>
+            </article>
+        </section>
+        
+        <script>
+            let monBoutons = document.querySelectorAll('.mon-bouton');
+        
+            monBoutons.forEach((bouton) => {
+                bouton.addEventListener('click', afficherAlerte);
+            });
+        
+            function afficherAlerte(event) {
+                let monAlerte = event.target.nextElementSibling;
+                let contenuAlerte = event.target.dataset.address;
+        
+                monAlerte.innerHTML = `<p>Où ? ${contenuAlerte}</p>`;
+            }
+        </script>
+        
+            </article>
+        </section>
+
+
+
+        <section>
+            <article>
+                <P1>"Les meilleures bibliothèques parisiennes"</P1>
+                <h3>Bibliothèque Sainte-Geneviève</h3>
+                <img src="bi.webp" alt="Image de la Bibliothèque">
+                <p>Installée depuis 1996 du côté du 13e arrondissement, la Bibliothèque nationale de France interpelle autant par ses tours, des livres ouverts se regardant en chiens de faïence imaginés par Dominique Perrault, que par son impressionnant fonds de documents. Un paradis de 15 millions d'archives touchant à toutes les disciplines, réparti sur 3 000 places entre le haut-de-jardin, accessible à tous, et le rez-de-jardin, royaume des chercheurs. Néo-étudiant ou vétéran du roman, la BnF saura toujours vous combler.</p>
+                <button class="mon-bouton" data-address=" 10 place du Panthéon, Paris 5e.">L'adresse</button>
+                <div class="mon-alerte" role="alert"></div>
+            </article>
+        
+            <article>
+                <h3>"Bibliothèque nationale de France (Site Richelieu)"</h3>
+                <img src="bi2.webp" alt="Image de la Bibliothèque">
+                <p>Après des années de coûteux travaux, le site Richelieu, le berceau tricentenaire de la BnF situé dans le 2e, a rouvert ses portes en 2022. Outre la refonte architecturale et le nouveau musée, c’est surtout la monumentale salle Ovale de lecture, avec ses 18 mètres de hauteur coiffés d’une verrière, qui attire les regards et les lecteurs. Avec une nouveauté de taille : fini l’exclusivité pour les chercheurs, la salle est désormais accessible à tous ! Les lecteurs peuvent fouiner parmi 20 000 volumes en libre-service (dont 9 000 BD) et s’installer dans l’une des 160 chaises designées par Patrick Jouin. La classe.</p>
+                <button class="mon-bouton" data-address="58 rue de Richelieu, Paris 2e">L'adresse</button>
+                <div class="mon-alerte" role="alert"></div>
+            </article>
+        
+            <article>
+                <h3>"Bibliothèque interuniversitaire de la Sorbonne (BIS)"</h3>
+                <img src="bi3.webp" alt="Image de la Bibliothèque">
+                <p>Une des plus vieilles et mythiques universités du monde pour l’une des plus belles bibliothèques de la capitale. Refaite au tournant des années 2010, la bibliothèque interuniversitaire de la Sorbonne et ses 250 ans au compteur (depuis 2020) détient près de 2 millions de documents imprimés, majoritairement en lettres et sciences humaines. Bémol : l’accès est coordonné au niveau d’études (L3 minimum), à la discipline suivie et à l’université de rattachement. Seule exception : si le document recherché est uniquement conservé à la BIS. Le tip Time Out : tentez tout de même votre chance, les documentalistes un peu coulants, ça doit bien exister.</p>
+                <button class="mon-bouton" data-address="17, rue de la Sorbonne, Paris 5e">L'adresse</button>
+                <div class="mon-alerte" role="alert"></div>
+            </article>
+        </section>
+        
+        <script>
+            let monBoutons = document.querySelectorAll('.mon-bouton');
+        
+            monBoutons.forEach((bouton) => {
+                bouton.addEventListener('click', afficherAlerte);
+            });
+        
+            function afficherAlerte(event) {
+                let monAlerte = event.target.nextElementSibling;
+                let contenuAlerte = event.target.dataset.address;
+        
+                monAlerte.innerHTML = `<p>Où ? ${contenuAlerte}</p>`;
+            }
+        </script>
+        
+            </article>
+        </section>
+        
+        
+
+
+    </main>
+
+
+</body>
+</html>
