@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="./assets/js/color-modes.js"></script>
+  <head><script src="../assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       body {
@@ -74,21 +74,23 @@
 
         main {
       flex: 1; /* Fait en sorte que le contenu de la page prenne tout l'espace disponible */
-      padding: 30px;
+      padding: 20px;
     }
 
 
     footer {
-      background-color: #000; /* Fond noir pour le footer */
-      color: #fff; /* Couleur du texte dans le footer */
-      padding: 10px;
-      text-align: center;
-      bottom: 0; /* Aligner le bas du footer avec le bas de la fenêtre */
-      left: 0; /* Aligner le côté gauche du footer avec le côté gauche de la fenêtre */
-      right: 1; /* Aligner le côté droit du footer avec le côté droit de la fenêtre */
-      width: calc(100% - 40px); /* Largeur du bandeau du footer, ajustable selon vos besoins */
-      margin: 0 auto; /* Centrer le footer horizontalement */
-    }
+  background-color: #000; /* Fond noir pour le footer */
+  color: #fff; /* Couleur du texte dans le footer */
+  padding: 11px;
+  text-align: center;
+
+  bottom: 2px; /* Aligner le bas du footer avec le bas de la fenêtre */
+  left: 3%; /* Aligner le côté gauche du footer avec le côté gauche de la fenêtre */
+  right: 15%; /* Aligner le côté droit du footer avec le côté droit de la fenêtre */
+  width: calc(100% - 40px); /* Largeur du bandeau du footer, ajustable selon vos besoins */
+  margin-left: 20px; /* Centrer le footer horizontalement */
+  margin-right: 20px; /* Pousser vers la gauche */
+}
       
       
     </style>
@@ -112,14 +114,9 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"></a>
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"></a>
-          </li>
+          
         </ul>
         
       </div>
@@ -138,17 +135,21 @@
 <br>
 <fieldset>
              
-	<div class="col-xs-12 col-sm-5"><form action="https://www.panierdugourmand.com/connexion" method="post" id="login_form" class="box">
+	<div class="col-xs-12 col-sm-5"><form action="" method="post" id="login_form" class="box">
 	
  <h3 class="page-subheading">Déjà inscrit?</h3><div class="form_content clearfix">
 	   <div class="form-group"> <label for="email">Adresse e-mail</label> 
-		 <input class="is_required validate account_input form-control" data-validate="isEmail" type="email" id="email" name="email" value=""></div>
-		 <div class="form-group"> 
-      <label for="password">Mot de Passe :</label>
-      <input type="password" id="password" oninput="validatePassword()" required>
-      <p id="password-help">Le mot de passe doit contenir au moins 8 caractères.</p>
-      <p id="password-error">Erreur : Le mot de passe est trop court.</p>
-  
+        
+        <input class="is_required validate account_input form-control" data-validate="isEmail" type="email" id="email" name="email" value="" title="Veuillez saisir une adresse e-mail valide.">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Mot de Passe :</label>
+            <input type="password" id="password" oninput="validatePassword()" required title="Le mot de passe doit contenir au moins 8 caractères." class="form-control">
+            <p id="password-help">Le mot de passe doit contenir au moins 8 caractères.</p>
+            <p id="password-error">Erreur : Le mot de passe est trop court.</p>
+          </div>
+            
       <script>
           function validatePassword() {
               var passwordInput = document.getElementById("password");
@@ -175,10 +176,11 @@
 
 
 		   
-			 <a href="https://www./recuperation-mot-de-passe" title="Récupérez votre mot de passe" rel="nofollow">Mot de passe oublié ?</a></p>
+    <a href="https://www./recuperation-mot-de-passe" title="Récupérez votre mot de passe" rel="nofollow">Mot de passe oublié ?</a></p>
 			 <p class="submit"> <input type="hidden" class="hidden" name="back" value="my-account"> <button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium"> 
 			  <ul class="nav nav-pills">
-<li class="nav-item"><a href="Connexion.html" class="nav-link active" aria-current="page"> Connexion </a></li>
+<li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page"> Connexion </a></li>
+
 
 </fieldset>
 
@@ -189,7 +191,7 @@
 
 
 </main>
-<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
