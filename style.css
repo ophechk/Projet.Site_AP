@@ -67,7 +67,7 @@ header:hover {
   position: relative;
   bottom: 0;
   left: 0;
-  width: 80%;
+  width: 100%;
   pointer-events: none;
 }
 
@@ -141,7 +141,7 @@ header:hover {
 
 .card img {
   display: block;
-  width: 80%;
+  width: 100%;
   max-width: 250px;
   aspect-ratio: 1/1;
   margin: 20px;
@@ -357,7 +357,7 @@ th {
 }
 
 img {
-  width: 500px;
+
   display: block;
   margin: 0 auto;
 }
@@ -413,7 +413,7 @@ div {
   position: relative;
   bottom: 0;
   left: 0;
-  width: 80%;
+  width: 100%;
   pointer-events: none;
 }
 
@@ -435,7 +435,7 @@ div {
   position: relative;
   bottom: 0;
   left: 0;
-  width: 80%;
+  width: 100%;
   pointer-events: none;
 }
 
