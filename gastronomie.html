@@ -94,6 +94,23 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+       footer {
+  background-color: #000;
+  color: #fff;
+  padding: 15px; /* Ajustez la valeur du padding selon vos préférences */
+  text-align: center;
+  margin-top: 20px; /* Ajoutez une marge en haut pour séparer du formulaire */
+  width: 100%; /* Ajustez la valeur de width pour s'adapter au contenu */
+  box-sizing: border-box; /* Inclure le padding dans la largeur */
+}
+
+.footer-content {
+  margin-left: 50px; /* Ajuste pour étendre à gauche */
+  margin-right: 50px; /* Ajuste pour étendre à droite */
+  width: calc(100% - 40px); /* Ajuste la largeur en fonction des marges */
+  box-sizing: border-box; /* Inclure le padding dans la largeur */
+}
     </style>
 
     
@@ -306,16 +323,16 @@
   </div>
 
 </main>
-
-<footer class="text-body-secondary py-5">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Revenir en haut de la page</a>
-    </p>
-    <p class="mb-1">Crédit à Bootstrap pour le modèle de la page web</p>
-    <p class="mb-0">Lei Wei, Nirzara et Ophélia en BTS SIO1 B</p>
+          
+<!-- FOOTER -->
+<footer class="container" style="position: relative; left: -10px;">
+  <div class="footer-content">
+    <p>&copy; 2024 Welcome To Paris. Tous droits réservés.</p>
+    <p>Le design de ce site a été inspiré par Boostrap</p>
   </div>
 </footer>
+
+
 <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
