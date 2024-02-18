@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-bs-theme="auto">
+<html lang="en" data-bs-theme="auto">
   <head><script src="../assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
@@ -72,6 +72,12 @@
         }
     
 
+
+        .navbar img.logo {
+  margin-left: 20px; /* Ajustez la valeur en pixels selon vos besoins */
+}
+
+
         main {
       flex: 1; /* Fait en sorte que le contenu de la page prenne tout l'espace disponible */
       padding: 20px;
@@ -105,7 +111,7 @@
     
 <header data-bs-theme="dark">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <img src="logo.png" width="90" height="80">
+    <img src="logo.png" class="logo" width="90" height="80">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,21 +141,19 @@
 <br>
 <fieldset>
              
-	<div class="col-xs-12 col-sm-5"><form action="" method="post" id="login_form" class="box">
+	<div class="col-xs-12 col-sm-5"><form action="https://www.panierdugourmand.com/connexion" method="post" id="login_form" class="box">
 	
  <h3 class="page-subheading">Déjà inscrit?</h3><div class="form_content clearfix">
 	   <div class="form-group"> <label for="email">Adresse e-mail</label> 
-        
-        <input class="is_required validate account_input form-control" data-validate="isEmail" type="email" id="email" name="email" value="" title="Veuillez saisir une adresse e-mail valide.">
-        </div>
+		 <input class="is_required validate account_input form-control" data-validate="isEmail" type="email" id="email" name="email" value=""></div>
+		 
 
-        <div class="form-group">
-            <label for="password">Mot de Passe :</label>
-            <input type="password" id="password" oninput="validatePassword()" required title="Le mot de passe doit contenir au moins 8 caractères." class="form-control">
-            <p id="password-help">Le mot de passe doit contenir au moins 8 caractères.</p>
-            <p id="password-error">Erreur : Le mot de passe est trop court.</p>
-          </div>
-            
+     <div class="form-group">
+      <label for="password">Mot de Passe :</label>
+      <input type="password" id="password" oninput="validatePassword()" required title="Le mot de passe doit contenir au moins 8 caractères." class="form-control">
+      <p id="password-help">Le mot de passe doit contenir au moins 8 caractères.</p>
+      <p id="password-error">Erreur : Le mot de passe est trop court.</p>
+    </div>
       <script>
           function validatePassword() {
               var passwordInput = document.getElementById("password");
@@ -176,11 +180,10 @@
 
 
 		   
-    <a href="https://www./recuperation-mot-de-passe" title="Récupérez votre mot de passe" rel="nofollow">Mot de passe oublié ?</a></p>
+			 <a href="https://www./recuperation-mot-de-passe" title="Récupérez votre mot de passe" rel="nofollow">Mot de passe oublié ?</a></p>
 			 <p class="submit"> <input type="hidden" class="hidden" name="back" value="my-account"> <button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium"> 
 			  <ul class="nav nav-pills">
 <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page"> Connexion </a></li>
-
 
 </fieldset>
 
