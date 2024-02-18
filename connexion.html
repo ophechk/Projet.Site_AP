@@ -83,21 +83,23 @@
       padding: 20px;
     }
 
-
     footer {
-  background-color: #000; /* Fond noir pour le footer */
-  color: #fff; /* Couleur du texte dans le footer */
-  padding: 11px;
+  background-color: #000;
+  color: #fff;
+  padding: 15px; /* Ajustez la valeur du padding selon vos préférences */
   text-align: center;
-
-  bottom: 2px; /* Aligner le bas du footer avec le bas de la fenêtre */
-  left: 3%; /* Aligner le côté gauche du footer avec le côté gauche de la fenêtre */
-  right: 15%; /* Aligner le côté droit du footer avec le côté droit de la fenêtre */
-  width: calc(100% - 40px); /* Largeur du bandeau du footer, ajustable selon vos besoins */
-  margin-left: 20px; /* Centrer le footer horizontalement */
-  margin-right: 20px; /* Pousser vers la gauche */
+  margin-top: 20px; /* Ajoutez une marge en haut pour séparer du formulaire */
+  width: 100%; /* Ajustez la valeur de width pour s'adapter au contenu */
+  box-sizing: border-box; /* Inclure le padding dans la largeur */
 }
-      
+
+.footer-content {
+  margin-left: 50px; /* Ajuste pour étendre à gauche */
+  margin-right: 50px; /* Ajuste pour étendre à droite */
+  width: calc(100% - 40px); /* Ajuste la largeur en fonction des marges */
+  box-sizing: border-box; /* Inclure le padding dans la largeur */
+}
+
       
     </style>
 
@@ -141,7 +143,7 @@
 <br>
 <fieldset>
              
-	<div class="col-xs-12 col-sm-5"><form action="https://www.panierdugourmand.com/connexion" method="post" id="login_form" class="box">
+	<div class="col-xs-12 col-sm-5"><form action="" method="post" id="login_form" class="box">
 	
  <h3 class="page-subheading">Déjà inscrit?</h3><div class="form_content clearfix">
 	   <div class="form-group"> <label for="email">Adresse e-mail</label> 
@@ -150,26 +152,27 @@
 
      <div class="form-group">
       <label for="password">Mot de Passe :</label>
-      <input type="password" id="password" oninput="validatePassword()" required title="Le mot de passe doit contenir au moins 8 caractères." class="form-control">
+      <input type="password" id="password" oninput="validatePassword()" required
+             title="Le mot de passe doit contenir au moins 8 caractères." class="form-control">
       <p id="password-help">Le mot de passe doit contenir au moins 8 caractères.</p>
-      <p id="password-error">Erreur : Le mot de passe est trop court.</p>
-    </div>
-      <script>
-          function validatePassword() {
-              var passwordInput = document.getElementById("password");
-              var helpMessage = document.getElementById("password-help");
-              var errorMessage = document.getElementById("password-error");
+      <p id="password-error" style="color: red; display: none;">Erreur : Le mot de passe est trop court.</p>
+  </div>
   
-              if (passwordInput.value.length >= 8) {
-                  helpMessage.style.display = "none";
-                  errorMessage.style.display = "none";
-              } else {
-                  helpMessage.style.display = "block";
-                  errorMessage.style.display = "block";
-              }
+  <script>
+      function validatePassword() {
+          var passwordInput = document.getElementById("password");
+          var helpMessage = document.getElementById("password-help");
+          var errorMessage = document.getElementById("password-error");
+  
+          if (passwordInput.value.length >= 8) {
+              helpMessage.style.display = "none";
+              errorMessage.style.display = "none";
+          } else {
+              helpMessage.style.display = "block";
+              errorMessage.style.display = "block";
           }
-  
-        </script>
+      }
+  </script>
          
     
 
@@ -186,17 +189,20 @@
 <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page"> Connexion </a></li>
 
 </fieldset>
+</main>
+
 
 <!-- FOOTER -->
-<footer class="container">
-  <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+<footer class="container" style="position: relative; left: -10px;">
+  <div class="footer-content">
+    <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+  </div>
 </footer>
 
 
-</main>
+
 <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
 
-
- </body>
+</body>
 </html>
