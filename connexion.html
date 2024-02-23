@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="page de connexion" aria-describedby="page-description" />
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
     <title>Connexion</title>
@@ -111,11 +111,9 @@
     
 
     
-<header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-<a href="index.html">
-    <img src="logo.png" class="logo" width="90" height="80" aria-label="Logo du site Welcome to Paris">
-</a>
+<header data-bs-theme="dark" role="banner">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" role="navigation">
+    <img src="logo.png" class="logo" width="90" height="80" alt="Logo du site web">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -145,17 +143,18 @@
 <br>
 <fieldset>
              
-	<div class="col-xs-12 col-sm-5"><form action="" method="post" id="login_form" class="box">
+	<div class="col-xs-12 col-sm-5">
+    <form action="" method="post" id="login_form" class="box" role="form" aria-labelledby="login-heading">
 	
  <h3 class="page-subheading">Déjà inscrit?</h3><div class="form_content clearfix">
-	   <div class="form-group"> <label for="email">Adresse e-mail</label> 
-		 <input class="is_required validate account_input form-control" data-validate="isEmail" type="email" id="email" name="email" value=""></div>
+	   <div class="form-group"> <label for="email" title="email">Adresse e-mail</label> 
+		 <input class="is_required validate account_input form-control" data-validate="isEmail" type="email" id="email" name="email" value="" aria-required="true" aria-label="Adresse e-mail"></div>
 		 
 
      <div class="form-group">
       <label for="password">Mot de Passe :</label>
       <input type="password" id="password" oninput="validatePassword()" required
-             title="Le mot de passe doit contenir au moins 8 caractères." class="form-control">
+             title="Le mot de passe doit contenir au moins 8 caractères." class="form-control"aria-required="true" aria-label="Mot de passe">
       <p id="password-help">Le mot de passe doit contenir au moins 8 caractères.</p>
       <p id="password-error" style="color: red; display: none;">Erreur : Le mot de passe est trop court.</p>
   </div>
@@ -185,8 +184,8 @@
 
 
 		   
-			 <a href="https://www./recuperation-mot-de-passe" title="Récupérez votre mot de passe" rel="nofollow">Mot de passe oublié ?</a></p>
-			 <p class="submit"> <input type="hidden" class="hidden" name="back" value="my-account"> <button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium"> 
+			 <a href="https://www./recuperation-mot-de-passe" title="Récupérez votre mot de passe" rel="nofollow" aria-labelledby="forgot-password-link">Mot de passe oublié ?</a>
+			 <p class="submit"> <input type="hidden" class="hidden" name="back" value="my-account"> <button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium" aria-label="Se connecter"> 
 			  <ul class="nav nav-pills">
 <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page"> Connexion </a></li>
 
@@ -195,7 +194,7 @@
 
 
 <!-- FOOTER -->
-<footer class="container" style="position: relative; left: -10px;">
+<footer class="container" style="position: relative; left: -10px;" role="footer-content-info">
   <div class="footer-content">
     <p>&copy; 2024 Welcome To Paris. Tous droits réservés.</p>
     <p>Le design de ce site a été inspiré par Bootstrap</p>
