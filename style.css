@@ -409,14 +409,6 @@ div {
   );
 }
 
-.paralla img {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  pointer-events: none;
-}
-
 
 .parall {
   position: relative;
@@ -445,4 +437,16 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
+}
+
+img {
+  width: 520px;
+}
+
+p#paralla {
+  font-size: 20px;
+}
+
+a.img {
+  width: 200px;
 }
