@@ -76,7 +76,7 @@ p {
 }
 
 .conservatoire p {
-    color: #777;
+    color: #983030;
 }
 
 /* Styles pour la liste de conservatoires */
@@ -107,3 +107,10 @@ p {
     border-radius: 5px;
     margin-top: 10px;
 }
+
+footer {
+    background-color: #d3f8f1;
+    color: #be0909;
+    text-align: center;
+    padding: 10px;
+  }

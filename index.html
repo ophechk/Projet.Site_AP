@@ -151,6 +151,11 @@
       margin-right: 10px;
       /* Espacement entre les boutons */
     }
+    
+    strong {
+      color: white;
+    }
+      
   </style>
 
 
@@ -165,8 +170,10 @@
   <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <img src="logo.png" alt="Logo" width="70" height="70">
+        <a class="navbar-brand" href="#"></a> 
+        <a href="index.html">
+        <img src="logo.png" alt="Logo" width="70" height="70" aria-label="Logo du site web">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -174,7 +181,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" title="Accueil" aria-current="page" href="index.html">Accueil</a>
+              <a class="nav-link active" title="Accueil" aria-current="page" href="index.html" aria-label="Accueil de la page">Accueil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="culture.html">Culture</a>
@@ -215,7 +222,7 @@
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-            <image href="Paris1img.jpg" width="100%" height="132%" />
+            <image href="Paris1img.jpg" width="100%" height="142%" alt="Photo de la Tour Eiffel la nuit à Paris" />
           </svg>
           <div class="container">
             <div class="carousel-caption text-start">
@@ -229,7 +236,7 @@
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-            <image href="rue.color.jpg" width="100%" height="124%" alt="La rue Crémieux" />
+            <image href="rue.color.jpg" width="100%" height="134%" alt="La rue Crémieux" />
           </svg>
 
           <div class="container">
@@ -244,7 +251,7 @@
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-            <image href="photo_parc.jpg" width="110%" height="129%" />
+            <image href="photo_parc.jpg" width="100%" height="130%" aria-label="Photo du jardin de Luxembourg à Paris" />
           </svg>
           <div class="container">
             <div class="carousel-caption text-end">
@@ -272,13 +279,13 @@
             Eiffel avec 5,8 millions et le Musée d'Orsay avec 3,2 millions de visiteurs en 2022.</p>
           <p>Les meilleures destinations shopping à Paris : Les Galeries Lafayette, le Boulevard Saint-Germain, le
             Triangle d’Or, la Rue Saint-Honoré, la Rue de Rivoli, Le Bon Marché ou encore le Canal Saint-Martin.</p>
-          <p><img src="lafayette.jfif" aria-label="Galeries La Fayette" width="300px"></p>
-          <p><img src="boulevard_saint_germain.jpg" aria-label="Le boulevard Saint Germain" width="300px"></p>
-          <p><img src="triangle_or.jpg" aria-label="Le Triangle d'Or" width="300px"></p>
-          <p><img src="honore.jpg" aria-label="La Rue Saint-Honoré" width="300px"></p>
-          <p><img src="rivoli.jpg" aria-label="La Rue Rivoli" width="300px"></p>
-          <p><img src="marche.jpg" aria-label="Le Bon Marché" width="300px"></p>
-          <p><img src="martin.jpg" aria-label="Le Canal Saint-Martin" width="300px"></p>
+          <p><img src="lafayette.jfif" aria-label="Galeries La Fayette" width="330px"></p>
+          <p><img src="boulevard_saint_germain.jpg" aria-label="Le boulevard Saint Germain" width="330px"></p>
+          <p><img src="triangle_or.jpg" aria-label="Le Triangle d'Or" width="330px"></p>
+          <p><img src="honore.jpg" aria-label="La Rue Saint-Honoré" width="330px"></p>
+          <p><img src="rivoli.jpg" aria-label="La Rue Rivoli" width="330px"></p>
+          <p><img src="marche.jpg" aria-label="Le Bon Marché" width="330px"></p>
+          <p><img src="martin.jpg" aria-label="Le Canal Saint-Martin" width="330px"></p>
         </aside>
       </article>
     </div>
@@ -297,6 +304,7 @@
 
     <section>
       <hr class="featurette-divider">
+      
       <div class="row featurette">
         <div class="col-md-7 order-md-1"></div>
         <h2 class="featurette-heading fw-normal lh-1">La Tour Eiffel <span class="text-body-secondary"> </span></h2>
@@ -311,7 +319,7 @@
           height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x400"
           preserveAspectRatio="xMidYMid slice" focusable="false">
           <title></title>
-          <rect width="100%" height="" fill="var(--bs-secondary-bg)" /> <image href="tour_eiffel.jpg" width="340px" aria-label="La Tour Eiffel" role="img" /><text
+          <rect width="100%" height="" fill="var(--bs-secondary-bg)" /> <image href="tour_eiffel.jpg" width="100%" height="120%" aria-label="La Tour Eiffel" role="img" /><text
           x="100%" y="100%" fill="var(--bs-secondary-color)" dy=".3em"> </text>
          
         </svg>
@@ -373,7 +381,7 @@
           preserveAspectRatio="xMidYMid slice" focusable="false">
           <title></title>
           <rect width="" height="" fill="var(--bs-secondary-bg)" />
-          <image href="champs_elysee.jpg" width="100%" height="110%"></image><text x="60%" y="60%"
+          <image href="champs_elysee.jpg" width="100%" height="120%" aria-label="L'arc de triomphe"></image><text x="60%" y="60%"
             fill="var(--bs-secondary-color)" dy=".2em"></text>
         </svg>
       </div>
@@ -399,7 +407,7 @@
           preserveAspectRatio="xMidYMid slice" focusable="false">
           <title></title>
           <rect width="" height="" fill="var(--bs-secondary-bg)" />
-          <image href="basilique.butte.jpg" width="100%" height="100%"></image><text x="50%" y="60%"
+          <image href="basilique.butte.jpg" width="100%" height="280px" alt="L'église du sacré coeur"></image><text x="50%" y="60%"
             fill="var(--bs-secondary-color)" dy=".2em"></text>
         </svg>
       </div>
@@ -413,9 +421,8 @@
 
     <!-- FOOTER -->
     <footer class="container" role="footer-content">
-      <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
-      <p>Le design de ce site à été inspiré par Bootstrap</p>
-      
+      <p>&copy; 2024 Welcome To Paris. Tous droits réservés.</p>
+    <p>Le design de ce site a été inspiré par Boostrap</p>
     </footer>
 
 
